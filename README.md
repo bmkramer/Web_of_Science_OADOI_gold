@@ -4,7 +4,7 @@ Using the [OADOI API (v2)](https://oadoi.org/api) to get information on online a
 ## Rationale
 In December 2017, Web of Science started including information on Open Access (OA) availability of publications using article-level information from [OADOI](https://oadoi.org/). Previously, information on OA availability on publications in Web of Science was based on journal level, only including gold Open Access journals indexed in DOAJ. 
 
-Web of Science now labels all articles as gold OA that are detected as freely available from the publisher. No distinction is made between articles in gold open access journals, hybrid journal or subscription journals that make (some) articles freely available, but without a license for re-use (read-only). Both for effective filtering and for monitoring OA developments at various levels (i.e. institutional, field, country) such distinctions would be very useful. 
+Web of Science currently labels all articles as gold OA that are detected as freely available from the publisher. No distinction is made between articles in gold open access journals, hybrid journal or subscription journals that make (some) articles freely available, but without a license for re-use (read-only). Both for effective filtering and for monitoring OA developments at various levels (i.e. institutional, field, country) such distinctions would be very useful. 
 
 This script uses detailed information available from the OADOI API to provide a breakdown of sets of articles labeled as 'gold OA' in Web of Science. The following categories are distinguished (description taken from [Piwowar at al., 2017]( https://doi.org/10.7287/peerj.preprints.3119v1))
 
@@ -13,7 +13,7 @@ This script uses detailed information available from the OADOI API to provide a 
  - **Bronze**: Free to read on the publisher page, but without a license
 
 ## Input / output
-This script uses as input a set of export files with full records from Web of Science, in Tab-delimited (Win, UTF-8) format.The files should be placed in a folder named 'WoS_export' in the working directory.
+This script uses as input a set of export files with full records from Web of Science, in Tab-delimited (Win, UTF-8) format.The files should be placed in a folder named 'WoS_export' in the working directory. In the script, variables can be declared to define the dataset (entity of analysis (e.g. name of institution), year, type of OA), these will be used to name the output files. 
 
 NB1. Only 500 records can be exported from Web of Science at a time, but since this script handles a series of export files, larger datasets can be analysed.
 
