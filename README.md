@@ -22,25 +22,26 @@ NB2 Many thanks to Alberto Martín-Martín and Emilio Delgado López-Cózar from
 The script has three separate outputs:
 - a csv-file with a list of DOIs from Web of Science
 - a csv-file with [information from the OADOI API (v2)](https://oadoi.org/api/v2) for each of these DOIs:
- - DOI
- - data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
- - is_oa - whether an OA-version of the article was found
- - host_type - publisher (for gold OA) or repository (for green OA)
- - license - (NA if no license available)
- - journal_is_oa - whether the journal is included in DOAJ
- - URL - URL where the OA-version of the article can be found
+  - DOI
+  - data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
+  - is_oa - whether an OA-version of the article was found
+  - host_type - publisher (for gold OA) or repository (for green OA)
+  - license - (NA if no license available)
+  - journal_is_oa - whether the journal is included in DOAJ
+  - URL - URL where the OA-version of the article can be found
  - printed summary listing numbers and percentages of articles identified as green, gold, hybrid and bronze.
+ 
  ![example WoS OADOI gold output](/WoS_OADOI_gold_output_example.jpg)
 
 ## A word about green OA
-Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but wothout publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API.
+Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but without publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API.
 
 In addition, when multiple OA-versions of an article are available, OADOI prioritizes publisher-hosted content(i.e. gold, hybrid or bronze), then versions closer to the version of record (i.e. for green OA, published version over accepted version over submitted version). Web of Science only includes the 'best' OA location as determined by this algorithm. 
 
 Since this script is primarily intended to break down the 'gold OA' category in Web of Science (into gold, hybrid and bronze OA), no further breakdown is provided for green OA. 
 
 ## The script 
-
+[WOS_gold_DOI_queries_OADOI_API_v2.R](/WOS_gold_DOI_queries_OADOI_API_v2.R)
 
 
 
