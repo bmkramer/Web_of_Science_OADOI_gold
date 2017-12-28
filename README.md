@@ -2,7 +2,7 @@
 Using the [OADOI API (v2)](https://oadoi.org/api) to get information on online availability (gold, hybrid, bronze and green Open Access)  of sets of academic articles retrieved from Web of Science. 
 
 ## Rationale
-In December 2017, Web of Science started including information on Open Access (OA) availability of publications using article-level information from [OADOI](https://oadoi.org/). Previously, information on OA availability on publications in Web of Science was based on journal level, only including gold Open Access journals indexed in DOAJ. 
+In December 2017, [Web of Science](http://info.clarivate.com/openaccess) started including information on Open Access (OA) availability of publications using article-level information from [OADOI](https://oadoi.org/). Previously, information on OA availability on publications in Web of Science was based on journal level, only including gold Open Access journals indexed in DOAJ. 
 
 Web of Science currently labels all articles as gold OA that are detected as freely available from the publisher. No distinction is made between articles in gold open access journals, hybrid journal or subscription journals that make (some) articles freely available, but without a license for re-use (read-only). Both for effective filtering and for monitoring OA developments at various levels (i.e. institutional, field, country) such distinctions would be very useful. 
 
