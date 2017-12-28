@@ -17,7 +17,7 @@ This script uses as input a set of export files with full records from Web of Sc
 
 NB1. Only 500 records can be exported from Web of Science at a time, but since this script handles a series of export files, larger datasets can be analysed.
 
-NB2 Many thanks to [Alberto Martín-Martín](https://github.com/alberto-martin) (@alberto-martin) and Emilio Delgado López-Cózar from [EC3](http://ec3.ugr.es) for their R-script for [reading Web of Science into R](https://github.com/alberto-martin/read.wos.R/blob/master/report.Rmd), that I re-used here. 
+NB2 Many thanks to Alberto Martín-Martín ([@alberto-martin](https://github.com/alberto-martin)) and Emilio Delgado López-Cózar from [EC3](http://ec3.ugr.es) for their R-script for [reading Web of Science into R](https://github.com/alberto-martin/read.wos.R/blob/master/report.Rmd), that I re-used here. 
 
 The script has three separate outputs:
 - a csv-file with a list of DOIs from Web of Science
