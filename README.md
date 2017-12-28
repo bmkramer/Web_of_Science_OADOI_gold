@@ -20,23 +20,33 @@ NB1. Only 500 records can be exported from Web of Science at a time, but since t
 NB2 Many thanks to Alberto Martín-Martín and Emilio Delgado López-Cózar from [EC3](http://ec3.ugr.es) for their R-script for [reading Web of Science into R](https://github.com/alberto-martin/read.wos.R/blob/master/report.Rmd), that I re-used here. 
 
 The script has three separate outputs:
- - a csv-file with a list of DOIs from Web of Science
- - a csv-file with [information from the OADOI API (v2)](https://oadoi.org/api/v2) for each of these DOIs:
-  -- DOI
-  -- data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
-  -- is_oa - whether an OA-version of the article was found
-  -- host_type - publisher (for gold OA) or repository (for green OA)
-  -- license - (NA if no license available)
-  -- journal_is_oa - whether the journal is included in DOAJ
-  -- URL - URL where the OA-version of the article can be found
-- printed summary listing numbers and percentages of articles identified as green, gold, hybrid and bronze. 
+- a csv-file with a list of DOIs from Web of Science
+- a csv-file with [information from the OADOI API (v2)](https://oadoi.org/api/v2) for each of these DOIs:
+ -- DOI
+ -- data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
+ -- is_oa - whether an OA-version of the article was found
+ -- host_type - publisher (for gold OA) or repository (for green OA)
+ -- license - (NA if no license available)
+ -- journal_is_oa - whether the journal is included in DOAJ
+ -- URL - URL where the OA-version of the article can be found
+ - printed summary listing numbers and percentages of articles identified as green, gold, hybrid and bronze.
+'Utrecht 2016 gold 
+ 2785 checked 
+ 2773 retrieved - 99.5 % 
+ 2773 OA - 100 % 
+ 2773 WoS gold - 100 % 
+ 0 green -  0 % 
+ 1112 gold -  36.7 % (in WoS gold)
+ 984 hybrid - 43.8 % (in WoS gold)
+ 677 bronze - 19.5 % (in WoS gold)
+ [check] gold+hybrid+bronze (in WoS gold) -  100 %'
 
 ## A word about green OA
 Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but wothout publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API.
 
 In addition, when multiple OA-versions of an article are available, OADOI prioritizes publisher-hosted content(i.e. gold, hybrid or bronze), then versions closer to the version of record (i.e. for green OA, published version over accepted version over submitted version). Web of Science only includes the 'best' OA location as determined by this algorithm. 
 
-Since this script is primarily intended to break down the 'gold OA' category in Web of Science into gold, hybrid and bronze OA, no further breakdown is provided for green OA. 
+Since this script is primarily intended to break down the 'gold OA' category in Web of Science (into gold, hybrid and bronze OA), no further breakdown is provided for green OA. 
 
 ## The script 
 
