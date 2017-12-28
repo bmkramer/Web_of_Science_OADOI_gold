@@ -22,24 +22,15 @@ NB2 Many thanks to Alberto Martín-Martín and Emilio Delgado López-Cózar from
 The script has three separate outputs:
 - a csv-file with a list of DOIs from Web of Science
 - a csv-file with [information from the OADOI API (v2)](https://oadoi.org/api/v2) for each of these DOIs:
- -- DOI
- -- data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
- -- is_oa - whether an OA-version of the article was found
- -- host_type - publisher (for gold OA) or repository (for green OA)
- -- license - (NA if no license available)
- -- journal_is_oa - whether the journal is included in DOAJ
- -- URL - URL where the OA-version of the article can be found
+ - DOI
+ - data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
+ - is_oa - whether an OA-version of the article was found
+ - host_type - publisher (for gold OA) or repository (for green OA)
+ - license - (NA if no license available)
+ - journal_is_oa - whether the journal is included in DOAJ
+ - URL - URL where the OA-version of the article can be found
  - printed summary listing numbers and percentages of articles identified as green, gold, hybrid and bronze.
-'Utrecht 2016 gold 
- 2785 checked 
- 2773 retrieved - 99.5 % 
- 2773 OA - 100 % 
- 2773 WoS gold - 100 % 
- 0 green -  0 % 
- 1112 gold -  36.7 % (in WoS gold)
- 984 hybrid - 43.8 % (in WoS gold)
- 677 bronze - 19.5 % (in WoS gold)
- [check] gold+hybrid+bronze (in WoS gold) -  100 %'
+ ![example WoS OADOI gold output](/WoS_OADOI_gold_output_example.jpg)
 
 ## A word about green OA
 Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but wothout publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API.
