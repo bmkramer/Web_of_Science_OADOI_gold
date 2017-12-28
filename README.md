@@ -13,7 +13,7 @@ This script uses detailed information available from the OADOI API to provide a 
  - **Bronze**: Free to read on the publisher page, but without a license
 
 ## Input / output
-This script uses as input a set of export files with full records from Web of Science, in Tab-delimited (Win, UTF-8) format.The files should be placed in a folder named 'WoS_export' in the working directory. In the script, variables can be declared to define the dataset (entity of analysis (e.g. name of institution), year, type of OA), these will be used to name the output files. 
+This script uses as input a set of export files with full records from Web of Science, in Tab-delimited (Win, UTF-8) format.The files should be placed in a folder named 'WoS_export' in the working directory (or elsewhere if adapted in the script). In the script, variables can be declared to define the dataset (entity of analysis (e.g. name of institution), year, type of OA), these will be used to name the output files. 
 
 NB1. Only 500 records can be exported from Web of Science at a time, but since this script handles a series of export files, larger datasets can be analysed.
 
