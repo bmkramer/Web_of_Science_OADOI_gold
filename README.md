@@ -1,12 +1,12 @@
 # Web_of_Science_OADOI_gold - R script
-Using the OADOI API (v2) to get information on online availability (gold, hybrid, bronze and green Open Access)  of sets of academic articles retrieved from Web of Science. 
+Using the [OADOI API (v2)](https://oadoi.org/api) to get information on online availability (gold, hybrid, bronze and green Open Access)  of sets of academic articles retrieved from Web of Science. 
 
 ## Rationale
 In December 2017, Web of Science started including information on Open Access (OA) availability of publications using article-level information from [OADOI](https://oadoi.org/). Previously, information on OA availability on publications in Web of Science was based on journal level, only including gold Open Access journals indexed in DOAJ. 
 
 Web of Science now labels all articles as gold OA that are detected as freely available from the publisher. No distinction is made between articles in gold open access journals, hybrid journal or subscription journals that make (some) articles freely available, but without a license for re-use (read-only). Both for effective filtering and for monitoring OA developments at various levels (i.e. institutional, field, country) such distinctions would be very useful. 
 
-This script uses detailed information available from the OADOI API to provide a breakdown of type of OA for articles labeled as 'gold OA' in Web of Science. The following categories are distinguished (description taken from [Piwowar at al., 2017]( https://doi.org/10.7287/peerj.preprints.3119v1))
+This script uses detailed information available from the OADOI API to provide a breakdown of sets of articles labeled as 'gold OA' in Web of Science. The following categories are distinguished (description taken from [Piwowar at al., 2017]( https://doi.org/10.7287/peerj.preprints.3119v1))
 
  - **Gold**: Published in an open-access journal (as defined by the DOAJ)
  - **Hybrid**: Free under an open license in a toll-access journal
@@ -32,10 +32,11 @@ The script has three separate outputs:
 - printed summary listing numbers and percentages of articles identified as green, gold, hybrid and bronze. 
 
 ## A word about green OA
-Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but wothout publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API. 
+Web of Science only includes information about green OA availability when either the accepted version (manuscript after peer review, but wothout publisher formatting) or the published version (with publisher formatting) can be retrieved from a repository. Submitted versions (author manuscript before peer review) are not included, even though this information is available from the OADOI API.
 
 In addition, when multiple OA-versions of an article are available, OADOI prioritizes publisher-hosted content(i.e. gold, hybrid or bronze), then versions closer to the version of record (i.e. for green OA, published version over accepted version over submitted version). Web of Science only includes the 'best' OA location as determined by this algorithm. 
 
+Since this script is primarily intended to break down the 'gold OA' category in Web of Science into gold, hybrid and bronze OA, no further breakdown is provided for green OA. 
 
 ## The script 
 
