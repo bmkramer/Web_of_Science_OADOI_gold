@@ -20,7 +20,7 @@ NB1. Only 500 records can be exported from Web of Science at a time, but since t
 NB2 Many thanks to Alberto Martín-Martín ([@alberto-martin](https://github.com/alberto-martin)) and Emilio Delgado López-Cózar from [EC3](http://ec3.ugr.es) for their R-script for [reading Web of Science into R](https://github.com/alberto-martin/read.wos.R/blob/master/report.Rmd), that I re-used here. 
 
 The script has three separate outputs:
-- a csv-file with a list of DOIs from Web of Science
+- a csv-file with a list of DOIs from the Web of Science export files
 - a csv-file with [information from the OADOI API (v2)](https://oadoi.org/api/v2) for each of these DOIs:
   - DOI
   - data_standard - method for hybrid detection (1 or 2; 2 is more sensitive)
