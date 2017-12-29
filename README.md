@@ -43,9 +43,9 @@ Since this script is primarily intended to break down the 'gold OA' category in 
 ## The script 
 [WOS_gold_DOI_queries_OADOI_API_v2.R](/WOS_gold_DOI_queries_OADOI_API_v2.R)
 
-An example (including data) of the use of this script to analyze levels of OA for Dutch universities' output in 2016 (articles & reviews only) can be found on Zenodo: [https://doi.org/10.5281/zenodo.1133759] (https://doi.org/10.5281/zenodo.1133759)
+An example (including data) of the use of this script to analyze levels of OA for Dutch universities' output in 2016 (articles & reviews only) can be found on Zenodo: https://doi.org/10.5281/zenodo.1133759
 
- ![NL universities OA levels 2016 output](/WoS_OADOI_gold_output_example.jpg)
+ ![NL universities OA levels 2016 output](/NL%20Universities%202016%20green-gold-hybrid-bronze%20OA%20-%20levels.png)
 
 
 
