@@ -1,4 +1,7 @@
 # Web_of_Science_OADOI_gold - R script
+
+[![DOI](https://zenodo.org/badge/115628623.svg)](https://zenodo.org/badge/latestdoi/115628623)
+
 Using the [OADOI API (v2)](https://oadoi.org/api) to get information on online availability (gold, hybrid, bronze and green Open Access)  of sets of academic articles retrieved from Web of Science. 
 
 ## Rationale
