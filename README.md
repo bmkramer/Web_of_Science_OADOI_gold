@@ -55,7 +55,7 @@ An example (including data) of the use of this script to analyze levels of OA fo
 
 update 20180122: added generic version of script that takes a DOI-list as input
 
-[generic_DOI_queries_OADOI_API_v2](/generic_DOI_queries_OADOI_API_v2)
+[generic_DOI_queries_OADOI_API_v2.R](/generic_DOI_queries_OADOI_API_v2.R)
 
 
 
